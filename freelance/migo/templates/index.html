@@ -1,18 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meetups</title>
+ 
 </head>
 <body>
-    <h1>Goodness says that coding is boring!</h1>
-
-    <h3>FYI this is the home page.</h3>
-    {% for meetup in meetups %}
-    <h1>{{ meetup.title }}</h1>
-    <h2>{{ meetup.description }}</h2>
-    {% endfor %}
+  {% for meetup in meetups %}
+  <img src="{{ image }}" alt="{{ location }}">
+  <h1>{{meetup.title}}</h1>
+  <h3>{{meetup.date}}</h3>
+  {% endfor %}
 </body>
 </html>

@@ -1,13 +1,30 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 .selector-for-some-widget {
   box-sizing: content-box;
 }
+
 
 .zami{
   float: right;
 }
 
+
 .nav{
   height: 8cm;
+  background-image: url('../images/family.jpg');
+  background-size: 100%;
 
+}
+
+.p-3 {
+  padding: 0rem!important;
+}
+.nav-link{
+  color: white
+}
+.nav h2{
+  font-family: Special Elite;
 }
